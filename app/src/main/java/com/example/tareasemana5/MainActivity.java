@@ -143,7 +143,15 @@ cargar(contador);
                     }
                 }else{
                     textoerror.setText("Errores: " + (errores = errores + 1));
-                    puntos.setText("Puntuacion: " + (puntaje = puntaje - 2));
+                    if(puntaje == 1){
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 1));
+                    }
+                    else if (puntaje > 0){
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 2));
+                    }
+                    else {
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 0));
+                    }
                     Toast.makeText(MainActivity.this, "Respuesta Incorrecta", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -176,7 +184,15 @@ cargar(contador);
                     }
                 }else{
                     textoerror.setText("Errores: " + (errores = errores + 1));
-                    puntos.setText("Puntuacion: " + (puntaje = puntaje - 2));
+                    if(puntaje == 1){
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 1));
+                    }
+                    else if (puntaje > 0){
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 2));
+                    }
+                    else {
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 0));
+                    }
                     Toast.makeText(MainActivity.this, "Respuesta Incorrecta", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -208,7 +224,15 @@ cargar(contador);
                     }
                 }else{
                     textoerror.setText("Errores: " + (errores = errores + 1));
-                    puntos.setText("Puntuacion: " + (puntaje = puntaje - 2));
+                    if(puntaje == 1){
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 1));
+                    }
+                    else if (puntaje > 0){
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 2));
+                    }
+                    else {
+                        puntos.setText("Puntuacion: " + (puntaje = puntaje - 0));
+                    }
                     Toast.makeText(MainActivity.this, "Respuesta Incorrecta", Toast.LENGTH_SHORT).show();
                 }
             }
